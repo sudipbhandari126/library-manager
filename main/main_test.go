@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func Test_greeter(t *testing.T) {
+func TestGreeter(t *testing.T) {
 	type args struct {
 		msg string
 	}
