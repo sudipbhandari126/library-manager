@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"library-manager/library"
+)
 
 func main() {
-	fmt.Print(greeter("welcome"))
+	fmt.Print(summary())
+
 }
 
-func greeter(msg string) string {
-	return fmt.Sprintf("Hello %s", msg)
+func summary() string {
+	return library.Summary()
 }
